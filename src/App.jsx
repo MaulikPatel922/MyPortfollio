@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import { BrowserRouter, Routes, Route, BrowserRouter } from 'react-router-dom'
 import Header from './Components/Header'
 import Home from './pages/Home'
 import About from './Pages/About'
@@ -8,7 +8,7 @@ import Contact from './Pages/Contact'
 
 function App() {
   return (
-    <Router basename='/MyPortfollio'>
+    <BrowserRouter basename='/MyPortfollio'>
       <Header />
       <Routes>
         <Route path="/" element={<Home/>} />
@@ -16,7 +16,7 @@ function App() {
         <Route path="/projects" element={<Projects />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
-    </Router>
+    </BrowserRouter>
   )
 }
 
