@@ -7,7 +7,7 @@ import DoctorAppoiment from "../assets/Images/DoctorAppoiment.png"
 function Projects() {
   const projects = [
     {
-      title: "Doctor Appointment System",
+      title: "Doctor Appointment",
       description:
         "An advanced web application for booking and managing doctor appointments with real-time availability tracking and admin dashboard.",
       tech: ["React", "Tailwind CSS", "LocalStorage"],
